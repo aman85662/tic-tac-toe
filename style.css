@@ -1,0 +1,21 @@
+.box{
+background-color: aqua;
+height: 150px;
+width: 150px;
+margin: 20px;
+text-align: center;
+font-size: 30px;
+}
+.board{
+    background-color: antiquewhite;
+    margin: 30px auto;
+    height:fit-content;
+    width: fit-content;
+}
+.row{
+    display: flex;
+    justify-content: space-evenly;
+}
+.title{
+ text-align: center;
+}
