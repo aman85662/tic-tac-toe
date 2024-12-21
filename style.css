@@ -3,14 +3,22 @@ background-color: aqua;
 height: 150px;
 width: 150px;
 margin: 20px;
-text-align: center;
-font-size: 30px;
+display: flex;   
+justify-content: center;   
+align-items: center; 
+}
+.box:hover{
+background-color: rgb(191, 235, 71);
+transition: 0.5s;
+cursor: pointer;
+transform: scale(0.9);
 }
 .board{
     background-color: antiquewhite;
-    margin: 30px auto;
+    margin: 15px auto;
     height:fit-content;
     width: fit-content;
+    box-shadow: 0 0 10px 5px rgba(223, 146, 146, 0.5);
 }
 .row{
     display: flex;
@@ -18,4 +26,8 @@ font-size: 30px;
 }
 .title{
  text-align: center;
+ font-size: 2em;
+ margin: 20px 0;
+ font-family: 'Arial', sans-serif;
+ color: #333;
 }
