@@ -4,10 +4,10 @@ function render(){
 const allBox = document.querySelectorAll('.box');
 allBox.forEach((boxElement,i)=>{
     if(board[i] === 'X' ){
-        boxElement.innerHTML = '<img src= close.png alt="X" height = "70px" />';                                                                                      
+        boxElement.innerHTML = '<img src= close.png alt="X" height = "60px" />';                                                                                      
     }
     else if(board[i] === '0' ){  
-        boxElement.innerHTML = '<img src= circle-ring.png alt="0" height = "80px" />';
+        boxElement.innerHTML = '<img src= circle-ring.png alt="0" height = "70px" />';
     }
     else{
         boxElement.innerHTML = '';
@@ -31,3 +31,7 @@ currentplayerElement.innerText = currentPlayer ;
 render(); 
 }
  render()
+ function reset(){
+     board.fill(-1);
+     render();
+ }
